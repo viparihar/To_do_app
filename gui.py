@@ -4,8 +4,7 @@ import FreeSimpleGUI
 label = FreeSimpleGUI.Text("Type in a to-do")
 input_box = FreeSimpleGUI.InputText(tooltip="Enter todo",key = "Todo")
 add_button = FreeSimpleGUI.Button("Add")
-list_box = FreeSimpleGUI.Listbox(values=functions.get_todos("todos.txt"),key='todos',
-                                enable_events=True,size=[45,10])
+list_box = FreeSimpleGUI.Listbox(values=functions.get_todos("todos.txt"),key='todos',enable_events=True,size=[45,10])
 edit_button = FreeSimpleGUI.Button("Edit")
 
 window = FreeSimpleGUI.Window('My To-Do App',layout = [[label],[input_box,add_button],[list_box,edit_button]],

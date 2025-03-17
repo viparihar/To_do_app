@@ -7,7 +7,7 @@ def get_todos(file):
 def write_todos(todos, file):
     with open(file, 'w') as file:
         file.writelines(todos)
-print(__name__)
+# print(__name__)
 # __name__ is used to control what we show in the import functions
 if __name__ == "__main__":
     print("Hello")
